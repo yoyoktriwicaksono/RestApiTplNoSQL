@@ -7,4 +7,6 @@ public interface MongoConfigData {
     Integer port();
     String host();
     String database();
+    String username();
+    String password();
 }
