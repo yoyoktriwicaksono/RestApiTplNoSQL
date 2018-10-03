@@ -27,7 +27,7 @@ public class ApiServer implements Runnable {
     public ApiServer(final int port) {
         this.port = port;
 
-        String resourceBaseApi = "src/main/webapp";
+        String resourceBaseApi = "src/main/swagger";
         if (Files.notExists(Paths.get(resourceBaseApi))) {
             resourceBaseApi = ApiServer.class.getProtectionDomain().getCodeSource().getLocation().toExternalForm();
         }
