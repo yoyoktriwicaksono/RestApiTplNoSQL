@@ -1,6 +1,6 @@
-package com.clutteredcode.rest;
+package org.wicaksono.rest.nosql;
 
-import com.clutteredcode.rest.config.ConfigurationManager;
+import org.wicaksono.rest.nosql.config.ConfigurationManager;
 import com.mongodb.Mongo;
 import com.mongodb.MongoClient;
 import org.eclipse.jetty.server.Server;
@@ -13,7 +13,7 @@ import org.slf4j.LoggerFactory;
 
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import com.clutteredcode.rest.model.*;
+import org.wicaksono.rest.nosql.model.*;
 /**
  * @author cluttered.code@gmail.com
  */
