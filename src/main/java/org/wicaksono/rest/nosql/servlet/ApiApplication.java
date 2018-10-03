@@ -44,7 +44,7 @@ public class ApiApplication extends ResourceConfig {
             }
         });
 
-        packages("com.clutteredcode.rest.resource");
+        packages("org.wicaksono.rest.nosql.resource");
         register(io.swagger.jaxrs.listing.ApiListingResource.class);
         register(io.swagger.jaxrs.listing.SwaggerSerializers.class);
     }
