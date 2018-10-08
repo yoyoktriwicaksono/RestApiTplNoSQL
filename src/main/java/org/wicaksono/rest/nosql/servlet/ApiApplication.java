@@ -11,6 +11,7 @@ import org.jvnet.hk2.guice.bridge.api.GuiceBridge;
 import org.jvnet.hk2.guice.bridge.api.GuiceIntoHK2Bridge;
 import org.mongodb.morphia.Datastore;
 import org.mongodb.morphia.Morphia;
+import org.wicaksono.rest.nosql.utils.AppConstants;
 
 /**
  * @author cluttered.code@gmail.com
@@ -44,7 +45,7 @@ public class ApiApplication extends ResourceConfig {
             }
         });
 
-        packages("org.wicaksono.rest.nosql.resource");
+        packages(AppConstants.RESOURCEPACKAGE);
         register(io.swagger.jaxrs.listing.ApiListingResource.class);
         register(io.swagger.jaxrs.listing.SwaggerSerializers.class);
     }

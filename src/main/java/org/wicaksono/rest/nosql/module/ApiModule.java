@@ -8,6 +8,7 @@ import org.wicaksono.rest.nosql.servlet.SwaggerBootstrap;
 import com.google.inject.servlet.ServletModule;
 import io.swagger.jaxrs.config.BeanConfig;
 import org.glassfish.jersey.servlet.ServletContainer;
+import org.wicaksono.rest.nosql.utils.AppConstants;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -46,7 +47,7 @@ public class ApiModule extends ServletModule {
         beanConfig.setDescription("Description of Todo API");
         beanConfig.setHost(ConfigurationManager.getInstance().getAppConfigData().host() + ":" + ConfigurationManager.getInstance().getAppConfigData().port().toString());
         beanConfig.setBasePath("/api/v1");
-        beanConfig.setResourcePackage("org.wicaksono.rest.nosql.resource");
+        beanConfig.setResourcePackage(AppConstants.RESOURCEPACKAGE);
         beanConfig.setScan(true);
     }
 }
