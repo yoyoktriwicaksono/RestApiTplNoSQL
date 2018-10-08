@@ -21,14 +21,14 @@ import java.util.stream.Collectors;
 @Path("/todo")
 @Consumes(MediaType.APPLICATION_JSON)
 @Produces(MediaType.APPLICATION_JSON)
-public class TodoResource {
+public class TodoService {
 
     private static final Map<UUID, Todo> data;
 
     private TestLogic testLogic;
 
     @Inject
-    public TodoResource(TestLogic testLogic){
+    public TodoService(TestLogic testLogic){
         this.testLogic = testLogic;
     }
 

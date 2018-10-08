@@ -26,11 +26,11 @@ import java.util.stream.Collectors;
 @Path("/test")
 @Consumes(MediaType.APPLICATION_JSON)
 @Produces(MediaType.APPLICATION_JSON)
-public class TestResource {
+public class TestService {
     private TestLogic testLogic;
 
     @Inject
-    public TestResource(TestLogic testLogic){
+    public TestService(TestLogic testLogic){
         this.testLogic = testLogic;
     }
 
