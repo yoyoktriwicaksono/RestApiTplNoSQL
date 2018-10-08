@@ -1,4 +1,4 @@
-package org.wicaksono.rest.nosql.resource;
+package org.wicaksono.rest.nosql.services;
 
 import org.wicaksono.rest.nosql.logic.TestLogic;
 import org.wicaksono.rest.nosql.model.EntityModel;
