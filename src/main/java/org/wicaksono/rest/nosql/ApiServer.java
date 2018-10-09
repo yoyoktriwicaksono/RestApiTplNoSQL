@@ -1,22 +1,15 @@
 package org.wicaksono.rest.nosql;
 
 import org.wicaksono.rest.nosql.config.ConfigurationManager;
-import com.mongodb.Mongo;
-import com.mongodb.MongoClient;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.handler.HandlerList;
 import org.eclipse.jetty.webapp.WebAppContext;
-import org.mongodb.morphia.Datastore;
-import org.mongodb.morphia.Morphia;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import org.wicaksono.rest.nosql.model.*;
-/**
- * @author cluttered.code@gmail.com
- */
+
 public class ApiServer implements Runnable {
 
     private static final Logger LOG = LoggerFactory.getLogger(ApiServer.class);
